@@ -3,40 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wndkx</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>mrrabyss</title>
+    <link rel="icon" type="image/png" href="https://github.com/mrrabyss.png?size=64">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body id="content">
-    <img src="assets/images/logo.jpeg" class="avatar" height="200" width="50">
-    <a href="https://wndkx.github.io"><h1>wndkx</h1></a>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="https://discord.com/users/925458300416450560/"><img src="assets/images/discord_logo.png" width="32" height="24"></a></li>
-            <li><a href="https://youtube.com/@wndkx123/"><img src="assets/images/ytlogo.png" width="32" height="24"></a></li>
-            <li><a href="https://github.com/wndkx/"><img src="assets/images/github_logo.png" width="32" height="24"></a></li>
-            <li><a href="guides/index.html">Guides</a></li>
-            <li><a href="donate.html">Donate</a></li>
-        </ul>
-    </nav>
-    <h1>Projects</h1>
-    <a href="projects/tiktokmassreporter.html"><h2>TikTokMassReporter</h2></a>
-    <p>A tool to mass-report a tiktok account, use it in your own risk</p>
-    <a href="projects/cordrpc.html"><h2>CordRPC</h2></a>
-    <p>CordRPC - a little python script to create RPC menu in your discord profile.</p>
-    <a href="projects/icloudbypasser.html"><h2>iCloudBypasser</h2></a>
-    <p>iCloudBypasser - python script(s) to bypass iCloud on iOS 12-13</p>
-    <a href="projects/discordinfinitetyper.html"><h2>DiscordInfiniteTyper</h2></a>
-    <p>Makes your status in your Discord GC as typing</p>
-    <footer>
-        <p>&copy; <span id="year"></span> wndkx</p>
-      </footer>
-      
-      <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-      </script>
+<body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <header class="hero">
+        <div class="hero__frame">
+            <span class="hero__corner hero__corner--tl" aria-hidden="true"></span>
+            <span class="hero__corner hero__corner--tr" aria-hidden="true"></span>
+            <span class="hero__corner hero__corner--bl" aria-hidden="true"></span>
+            <span class="hero__corner hero__corner--br" aria-hidden="true"></span>
+            <img class="hero__avatar" src="https://github.com/mrrabyss.png?size=200" width="120" height="120" alt="mrrabyss">
+        </div>
+        <h1 class="hero__title">mrrabyss</h1>
+        <p class="hero__tagline">a programmer</p>
+        <a class="guns-link" href="https://guns.lol/mrrabyss" target="_blank" rel="noopener noreferrer me" aria-label="mrrabyss on guns.lol — open bio page">
+            <span class="guns-link__line">
+                <span class="guns-link__brand">guns.lol</span><span class="guns-link__slash">/</span><span class="guns-link__user">mrrabyss</span>
+            </span>
+            <span class="guns-link__hint" aria-hidden="true">open bio page</span>
+        </a>
+    </header>
+
+    <main>
+        <section class="section" aria-labelledby="projects-heading">
+            <div class="section__head">
+                <h2 id="projects-heading" class="section__title">Projects</h2>
+                <p class="section__rule" aria-hidden="true"></p>
+            </div>
+            <ul class="projects">
+                <li class="project-card">
+                    <a class="project-card__link" href="https://github.com/mrrabyss/TikTokMassReporter" target="_blank" rel="noopener noreferrer">
+                        <span class="project-card__name">TikTokMassReporter</span>
+                        <span class="project-card__desc">Take down TikTok accounts as fast as a speed of light</span>
+                        <span class="project-card__arrow" aria-hidden="true">→</span>
+                    </a>
+                </li>
+                <li class="project-card">
+                    <a class="project-card__link" href="https://github.com/mrrabyss/SimpleMacRestore" target="_blank" rel="noopener noreferrer">
+                        <span class="project-card__name">SimpleMacRestore</span>
+                        <span class="project-card__desc">Simplified restore for Apple Silicon macs on Linux</span>
+                        <span class="project-card__arrow" aria-hidden="true">→</span>
+                    </a>
+                </li>
+                <li class="project-card">
+                    <a class="project-card__link" href="https://github.com/mrrabyss/DiscordInfiniteTyper" target="_blank" rel="noopener noreferrer">
+                        <span class="project-card__name">DiscordInfiniteTyper</span>
+                        <span class="project-card__desc">Type infinitly in Discord GC</span>
+                        <span class="project-card__arrow" aria-hidden="true">→</span>
+                    </a>
+                </li>
+                <li class="project-card">
+                    <a class="project-card__link" href="https://github.com/mrrabyss/ipswtool" target="_blank" rel="noopener noreferrer">
+                        <span class="project-card__name">ipswtool</span>
+                        <span class="project-card__desc">Download iPSW files, itunes versions, OTA builds faster than ever before</span>
+                        <span class="project-card__arrow" aria-hidden="true">→</span>
+                    </a>
+                </li>
+                <li class="project-card">
+                    <a class="project-card__link" href="https://github.com/mrrabyss/icloud_bypasser" target="_blank" rel="noopener noreferrer">
+                        <span class="project-card__name">icloud_bypasser</span>
+                        <span class="project-card__desc">iCloud bypass tool</span>
+                        <span class="project-card__arrow" aria-hidden="true">→</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section section--stats" aria-labelledby="stats-heading">
+            <div class="section__head">
+                <h2 id="stats-heading" class="section__title">GitHub</h2>
+                <p class="section__rule" aria-hidden="true"></p>
+            </div>
+            <div class="stats__grid">
+                <figure class="stats__figure">
+                    <img
+                        class="stats__img"
+                        src="https://github-readme-stats.vercel.app/api?username=mrrabyss&show_icons=true&hide_border=true&bg_color=0a0a0a&text_color=e8e8e8&icon_color=f5f5f5&title_color=ffffff&border_color=2a2a2a&ring_color=ffffff"
+                        alt="GitHub profile statistics for mrrabyss"
+                        loading="lazy"
+                        width="495"
+                        height="195">
+                </figure>
+                <figure class="stats__figure">
+                    <img
+                        class="stats__img"
+                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=mrrabyss&layout=compact&hide_border=true&bg_color=0a0a0a&text_color=e8e8e8&title_color=ffffff&border_color=2a2a2a"
+                        alt="Most used languages on GitHub for mrrabyss"
+                        loading="lazy"
+                        width="495"
+                        height="195">
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">© <span id="year"></span> mrrabyss</p>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script defer src="main.js"></script>
 </body>
 </html>
